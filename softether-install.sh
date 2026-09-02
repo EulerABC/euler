@@ -9,10 +9,10 @@ URL="https://github.com/SoftEtherVPN/SoftEtherVPN_Stable/releases/download/v4.44
 apt update
 apt install -y build-essential wget
 
-mkdir -p "$INSTALL_DIR"
-cd "$INSTALL_DIR"
+mkdir -p /etc/softether
+cd /etc/softether
 
-wget -O "$FILE" "$URL"
+wget -O "softether-vpnserver-v4.44-9807-rtm-2025.04.16-linux-x64-64bit.tar.gz" "https://github.com/SoftEtherVPN/SoftEtherVPN_Stable/releases/download/v4.44-9807-rtm/softether-vpnserver-v4.44-9807-rtm-2025.04.16-linux-x64-64bit.tar.gz"
 tar -xzf "$FILE"
 
 cd vpnserver
